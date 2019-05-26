@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+    <Tracking>
+        <ImageTarget name="SaBalMyeon" size="150.000000 150.706436"/>
+        <ImageTarget name="Marlboro_Medium.Right" size="2.200000 8.726360"/>
+        <ImageTarget name="Marlboro_Medium.Front" size="5.500000 8.705173"/>
+        <ImageTarget name="Marlboro_Medium.Back" size="5.500000 8.705173"/>
+        <ImageTarget name="Marlboro_Medium.Left" size="2.200000 8.726360"/>
+        <MultiTarget name="Marlboro_Medium">
+            <Part name="Marlboro_Medium.Left" translation="-2.75 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="Marlboro_Medium.Right" translation="2.75 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="Marlboro_Medium.Front" translation="0 0 1.100000023841858" rotation="AD: 1 0 0 0"/>
+            <Part name="Marlboro_Medium.Back" translation="0 0 -1.100000023841858" rotation="AD: 0 1 0 180"/>
+        </MultiTarget>
+    </Tracking>
+</QCARConfig>

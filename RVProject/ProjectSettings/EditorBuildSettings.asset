@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 7a2176015cf5c1547a041ef384a82337
+  - enabled: 1
+    path: Assets/Scenes/ARScene.unity
+    guid: 7bab764cf59b30f4ca99a5954b1f0697
+  - enabled: 1
+    path: Assets/Scenes/ARGameScene.unity
+    guid: 6724907a0ad398543aad0f45b777eaa9
+  - enabled: 1
+    path: Assets/Scenes/DictionaryScene.unity
+    guid: d27c8d2a7a40a234496c65147aebb6c6
+  - enabled: 1
+    path: Assets/Scenes/SettingScene.unity
+    guid: ba08ed07d24bdec43a09f933af0462d1
+  - enabled: 1
+    path: Assets/Scenes/StorageScene.unity
+    guid: e9eec59eb2c2c2846a243da8edb9042d
+  - enabled: 1
+    path: Assets/Scenes/StoreScene.unity
+    guid: 1550ab83cc7b9f347b7fd4b1a80159f1
+  m_configObjects: {}
