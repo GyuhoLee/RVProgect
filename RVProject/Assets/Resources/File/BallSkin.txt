@@ -1,7 +1,0 @@
-﻿ddong 1 권형진똥 0
-fuckingball 100 녹슨공 0
-baseball 400 야구공 0
-basketball 500 농구공 0
-soccerball 700 축구공 0
-balling 1000 볼링공 0
-commendation 1500 표창 0

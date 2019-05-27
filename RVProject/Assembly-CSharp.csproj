@@ -60,6 +60,7 @@
      <Compile Include="Assets\Script\ExitApplication.cs" />
      <Compile Include="Assets\Script\ExitWindowScript.cs" />
      <Compile Include="Assets\Script\FadeController.cs" />
+     <Compile Include="Assets\Script\FileManagement.cs" />
      <Compile Include="Assets\Script\HideExitWindow.cs" />
      <Compile Include="Assets\Script\IntroToAR.cs" />
      <Compile Include="Assets\Script\ItemObject.cs" />
@@ -71,7 +72,7 @@
      <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
      <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
      <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
-     <None Include="Assets\Resources\File\BallSkin.txt" />
+     <None Include="Assets\StreamingAssets\BallSkin.txt" />
      <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
      <None Include="Assets\Vuforia\Databases\Emulator\VuforiaEmulator.xml" />
      <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
