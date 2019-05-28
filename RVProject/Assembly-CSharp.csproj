@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\GameManager.cs" />
+     <Compile Include="Assets\Script\BuyScript.cs" />
      <Compile Include="Assets\Script\Click2sMoveScene.cs" />
      <Compile Include="Assets\Script\ClickMoveScene.cs" />
      <Compile Include="Assets\Script\ControlItem.cs" />
@@ -65,6 +66,7 @@
      <Compile Include="Assets\Script\IntroToAR.cs" />
      <Compile Include="Assets\Script\ItemObject.cs" />
      <Compile Include="Assets\Script\JustTest.cs" />
+     <Compile Include="Assets\Script\MessagePopup.cs" />
      <Compile Include="Assets\Script\OpenExitWindow.cs" />
      <Compile Include="Assets\Script\PointView.cs" />
      <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />

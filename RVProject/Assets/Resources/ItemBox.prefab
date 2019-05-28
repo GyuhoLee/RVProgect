@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1068135060246841587}
   - component: {fileID: 2210174826174716122}
   - component: {fileID: 7235330670775769201}
+  - component: {fileID: 8210158789419774360}
   m_Layer: 5
   m_Name: BuyButton
   m_TagString: Untagged
@@ -118,6 +119,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &8210158789419774360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806887725435261106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be9bf141d4e0486428729601c911221c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  payText: {fileID: 6713419019736714302}
+  equip: {fileID: 2701389236177240124}
+  Message: {fileID: 4061108212030620932, guid: e38576464f371aa4597903c6eb1dced0, type: 3}
 --- !u!1 &4853867781814514965
 GameObject:
   m_ObjectHideFlags: 0

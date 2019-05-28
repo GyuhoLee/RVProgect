@@ -7,6 +7,7 @@ public class PointView : MonoBehaviour
 {
     Text point;
     int iPointTemp;
+    string pay;
 
     void Start()
     {

@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
             {
                 _instance = FindObjectOfType(typeof(GameManager)) as GameManager;
                 if (_instance == null)
-                    Debug.LogError("No!!!!!");
+                    Debug.LogError("No instance in singleton");
             }
             return _instance;
         }
