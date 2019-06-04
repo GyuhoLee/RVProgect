@@ -7,30 +7,79 @@ public class FileManagement : MonoBehaviour
 {
     public string TextReadInAndroid(string path)
     {
-        string jsonString;
-        if (Application.platform == RuntimePlatform.Android)
+        FileInfo fi = new FileInfo(path);
+        if (fi.Exists)
         {
+            string srTemp;
             WWW reader = new WWW(path);
             while (!reader.isDone) { }
-            jsonString = reader.text;
+            srTemp = reader.text;
+            return srTemp;
         }
         else
         {
-            jsonString = File.ReadAllText(path);
+            string srTemp;
+            WWW reader = new WWW("jar:file://" + Application.dataPath + "!/assets/BallSkin.txt");
+            while (!reader.isDone) { }
+            srTemp = reader.text;
+            File.WriteAllText(path, srTemp);
+            return srTemp;
         }
-        return jsonString;
+    }
+    public string ReadAllFromFile(string path)
+    {
+        FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read);
+        StreamReader sr = new StreamReader(fs);
+        string temp = sr.ReadToEnd();
+        sr.Close();
+        return temp;
     }
 
-    public void writeStringToFile(string str, string filename)
+    public void Write0To1InWeb(string name)
     {
-     #if !WEB_BUILD
-        string path = pathForDocumentsFile(filename);
-        FileStream file = new FileStream(path, FileMode.Create, FileAccess.Write);
-        StreamWriter sw = new StreamWriter(file);
-        sw.WriteLine(str);
+        string path = @"Assets\StreamingAssets\BallSkin.txt";
+        string srTemp = ReadAllFromFile(path);
+        FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write);
+        StreamWriter sw = new StreamWriter(fs);
+        string[] values = srTemp.Split(' ', '\n');
+        for (int i = 0; i < values.Length - 3; i = i + 4)
+        {
+            if (i != 0)
+            {
+                sw.Write("\n");
+            }
+            if (values[i+2].Equals(name))
+            {
+                values[i + 3] = "1";
+            }
+            string value = values[i] + ' ' + values[i + 1] + ' ' + values[i + 2] + ' ' + values[i + 3];
+            sw.Write(value);
+        }
         sw.Close();
-        file.Close();
-    #endif
+    }
+
+    public void Write0To1InAndroid(string name)
+    {
+        string path = "jar:file://" + Application.dataPath + "!/assets/BallSkin.txt";
+        GameObject fTemp = GameObject.Find("FileManager");
+        string srTemp = fTemp.GetComponent<FileManagement>().TextReadInAndroid(path);
+        FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write);
+        StreamWriter sw = new StreamWriter(fs);
+        string[] values = srTemp.Split(' ', '\n');
+        for (int i = 0; i < values.Length - 3; i = i + 4)
+        {
+            if (i != 0)
+            {
+                sw.Write("\n");
+            }
+            if (values[i + 2].Equals(name))
+            {
+                values[i + 3] = "1";
+            }
+            string value = values[i] + ' ' + values[i + 1] + ' ' + values[i + 2] + ' ' + values[i + 3];
+            sw.Write(value);
+        }
+        sw.Close();
     }
 
     public string readStringFromFile(string filename)

@@ -66,8 +66,9 @@ public class ControlItem : MonoBehaviour
             itemObjectTemp.transform.localScale = new Vector3(1, 1, 1);
             srTemp = sr.ReadLine();
         }
+        sr.Close();
 #elif UNITY_ANDROID
-        path = "jar:file://" + Application.dataPath + "!/assets/BallSkin.txt";
+        path = Application.persistentDataPath + "/BallSkin.txt";
         GameObject fTemp = GameObject.Find("FileManager");
         string srTemp = fTemp.GetComponent<FileManagement>().TextReadInAndroid(path);
         string[] values = srTemp.Split(' ', '\n');

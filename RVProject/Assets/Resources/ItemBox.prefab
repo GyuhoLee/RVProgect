@@ -131,9 +131,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be9bf141d4e0486428729601c911221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: {fileID: 1287979788140357329}
   payText: {fileID: 6713419019736714302}
   equip: {fileID: 2701389236177240124}
-  Message: {fileID: 4061108212030620932, guid: e38576464f371aa4597903c6eb1dced0, type: 3}
 --- !u!1 &4853867781814514965
 GameObject:
   m_ObjectHideFlags: 0

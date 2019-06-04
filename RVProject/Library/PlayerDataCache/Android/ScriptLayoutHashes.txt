@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/82105/OneDrive - 경희대학교/바탕 화면/RV/RV_ver_0.12.apk
+C:/Users/82105/OneDrive - 경희대학교/바탕 화면/RV/RV_ver_0.13.apk
 SceneListBegin?
 Assets/Scenes/IntroScene.unity
 Assets/Scenes/ARScene.unity
@@ -27,7 +27,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.G
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
-ef015656c8494cda31429410e7c4c1d0 Assembly-CSharp.dll:.BuyScript
+05ada69f559eded2205edd59d5fa24f0 Assembly-CSharp.dll:.BuyScript
 2b8e83b87f733856b24e05439c0d2b0a Assembly-CSharp.dll:.Click2sMoveScene
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class BuyScript : MonoBehaviour, IPointerDownHandler
 {
     int point;
+    public Text name;
     public Text payText;
     public Button equip;
     int pay;
@@ -21,6 +22,11 @@ public class BuyScript : MonoBehaviour, IPointerDownHandler
         {
             GameObject.Find("Message").GetComponent<MessagePopup>().InputMessage("구매가 완료되었습니다.");
             StartCoroutine(WaitForIt());
+        #if (UNITY_EDITOR || UNITY_STANDALONE_WIN)
+            GameObject.Find("FileManager").GetComponent<FileManagement>().Write0To1InWeb(name.GetComponent<Text>().text);
+        #elif UNITY_ANDROID
+            GameObject.Find("FileManager").GetComponent<FileManagement>().Write0To1InAndroid(name.GetComponent<Text>().text);
+        #endif
         }
         else
         {
